@@ -1,3 +1,4 @@
+// Javascript object containing information necessary for building the header: Name, Contacts, Skills.
 var apps = ["JavaScript", "Python", "HTML5", "CSS3", "Ruby", "Rails",];
 var bio = {
   "name":"Omari Blockton",
@@ -16,7 +17,7 @@ var bio = {
     `Develepoment Applications: ${apps}`
   ]
 };
-
+// Builds the hedaer using the objects above
 function buildBio() {
   var formattedName = HTMLheaderName.replace("%data%", bio.name)
   var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -56,8 +57,9 @@ function buildSkills() {
 };
 
 buildSkills();
+//HEADER Build complete ---
 
-
+// Javascript Object containg information to build the work row.
 var work = {
   "jobs" : [
     {
@@ -77,7 +79,7 @@ var work = {
   ]
 
 };
-
+// Function to build the work row.
 function displayWork() {
   if (work['jobs'].length > 0) {
     for (job in work.jobs) {
@@ -93,7 +95,7 @@ function displayWork() {
   }
 };
 displayWork();
-
+// Work row build complete --
 
 var projects = {
   "projectList" : [
@@ -223,7 +225,7 @@ buildOnlineCourses();
 
 
 
-
+//function of the internationalizeButton
 function inName(name) {
   name = name.trim().split(" ")
   console.log(name);
