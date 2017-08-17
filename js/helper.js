@@ -27,11 +27,12 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="work-descriptWidth"><br>%data%</p>';
 
-var HTMLprojectStart = '<div class="project-entry col-6 center-text"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+//removed col-6 from project entry(start). add class box shadow to project title.Add class date-padding to project dates.
+var HTMLprojectStart = '<div class="project-entry center-text" data-toggle="modal" data-target="#myModal"></div>';
+var HTMLprojectTitle = '<div class="date-placeholder box-shadow">%data%</div>';
+var HTMLprojectDates = '<div class="date-text projectDate-spacing">%data%</div>';
+var HTMLprojectDescription = '<p class="project-ptag-spacing"><br>%data%</p>';
+var HTMLprojectImage = '<img class="project-image-height" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
@@ -50,6 +51,7 @@ var HTMLonlineURL = '<br><a href="#">%data%</a>';
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
+var HTMLmodal = '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">Favorite App Page</h4></div><div class="modal-body"><img class="img-responsive" src="images/555.jpeg">This was my first project in this class. I learned a lot about HTML and CSS.</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>'
 
 /*
 The Internationalize Names button uses this code to hook up your code to the button that's appended in resumeBuilder.js

@@ -103,29 +103,54 @@ var projects = {
       "title" : "Interactive Resume",
       "dates" : "Current",
       "description":"Build an interactive resume using Javascript",
-      "images" : "images/fry.jpg"
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-1"
+    },
+    {
+      "title" : "Build Personal Libraries",
+      "dates" : "Ongoing",
+      "description":"Build library of common functions for personal reference",
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-2"
+    },
+    {
+      "title" : "Build Personal Libraries",
+      "dates" : "8/12/2017-ongoing",
+      "description":"Build library of common functions for personal reference.Build library of common functions for personal reference.",
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-3"
     },
     {
       "title" : "Build Personal Libraries",
       "dates" : "Current",
       "description":"Build library of common functions for personal reference",
-      "images" : "images/fry.jpg"
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-4"
     },
     {
-      "title" : "Build Personal Libraries",
+      "title" : "Interactive Resume",
       "dates" : "Current",
-      "description":"Build library of common functions for personal reference",
-      "images" : "images/fry.jpg"
+      "description":"Build an interactive resume using Javascript",
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-5"
     },
     {
-      "title" : "Build Personal Libraries",
+      "title" : "Interactive Resume",
       "dates" : "Current",
-      "description":"Build library of common functions for personal reference",
-      "images" : "images/fry.jpg"
-    }
+      "description":"Build an interactive resume using Javascript",
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-6"
+    },
+    {
+      "title" : "Interactive Resume",
+      "dates" : "Current",
+      "description":"Build an interactive resume using Javascript",
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-7"
+    },
   ]
 }
-
+/*
 projects.display = function() {
   for (project in projects.projectList){
     $("#projectsRow").append(HTMLprojectStart)
@@ -133,7 +158,26 @@ projects.display = function() {
     var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projectList[project].dates)
     var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projectList[project].description)
     var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projectList[project].images)
-    $(".project-entry:last").append(formattedProjectTitle, formattedProjectDates, formattedProjectDescription, formattedProjectImage)
+    $(".project-entry:last").append(formattedProjectTitle)
+    $(".date-placeholder:last").append(formattedProjectDates, formattedProjectDescription, formattedProjectImage)
+  }
+
+};
+projects.display();
+*/
+
+projects.display = function() {
+  for (project in projects.projectList){
+    var formattedProjectStart = HTMLprojectStart.replace("myModal", projects.projectList[project].modalID)
+    $("#projectsRow").append(formattedProjectStart)
+    var formattedModal = HTMLmodal.replace("myModal", projects.projectList[project].modalID)
+    $("#modal-placeholder").append(formattedModal)
+    var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projectList[project].title)
+    var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projectList[project].dates)
+    var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projectList[project].description)
+    var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projectList[project].images)
+    $(".project-entry:last").append(formattedProjectTitle)
+    $(".date-placeholder:last").append(formattedProjectDates, formattedProjectDescription, formattedProjectImage)
   }
 
 };
@@ -182,7 +226,7 @@ var education = {
 
 function buildEducation() {
   for (let i=0; i < education.Schools.length; i++) {
-    $("#education").append(HTMLschoolStart)
+    $("#schools").append(HTMLschoolStart)
     var formattedSchoolName = HTMLschoolName.replace("%data%", education.Schools[i].name)
     var linkedSchoolName = formattedSchoolName.replace("#", education.Schools[i].link)
     var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.Schools[i].location)
@@ -207,9 +251,9 @@ function buildEducation() {
 buildEducation();
 
 function buildOnlineCourses() {
-  $("#education").append(HTMLonlineClasses)
+  $("#online").append(HTMLonlineClasses)
   for (let i =0; i < education.onlineCourses.length; i++) {
-        $("#education").append(HTMLonlineStart)
+        $("#online").append(HTMLonlineStart)
         var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title)
         var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school)
         var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates)
@@ -217,7 +261,7 @@ function buildOnlineCourses() {
         $(".online-entry:last").append(formattedOnlineTitle)
         $(".online-entry:last").append(formattedOnlineSchool)
         $(".online-entry:last").append(formattedOnlineDates)
-        $(".online-entry:last").append(formattedOnlineUrl)
+        //$(".online-entry:last").append(formattedOnlineUrl)
   }
 };
 

@@ -32,11 +32,14 @@ h6 {
 
 .education-entry,
 .work-entry,
-.project-entry,
 .online-entry {
   padding: 0 5%;
 }
-
+/*
+.project-entry {
+  margin: 0 5%;
+}
+*/
 .work-entry{
   padding-bottom: 2%;
 }
@@ -244,18 +247,39 @@ span {
 }
 
 @media only screen and (max-width: 770px) {
-  #projectsRow {
+  /*#projectsRow {
     flex-wrap: wrap;
     width: 100%;
   }
-  .project-entry {
+  /*.project-entry {
     padding: 2.5% 5%;
-  }
+  }*/
   img {
     max-width: 325px;
   }
 }
 
+
+ /* Education Row formating */
+
+ .educationRow-layout {
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 0% 5%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+
+ #schools {
+   border-right: solid 3px #dedede;
+ }
+
+
+
+
+
+ /* MEDIA QUERIES### */
 @media only screen and (max-width: 750px) {
   h1 {
     display: block;

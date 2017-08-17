@@ -3,13 +3,13 @@
     max-width: 1200px;
     width: 100%;
 }
-
+/*
 .row {
     width: 100%;
     margin-bottom: 20px;
     display: flex;
 }
-
+*/
 .col-1 {
     width: 8.33%;
 }

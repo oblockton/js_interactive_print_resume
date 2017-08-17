@@ -1,0 +1,118 @@
+/* With no project-entry width defined in this config, large screen will fit more project entries into a row of 100% without wrapping.
+Bottom code is possible solution.
+.row {
+ width: 100%;
+ margin-bottom: 20px;
+ display: flex;
+}
+*/
+.row {
+  /*width: 100%;*/
+  /*margin-bottom: 20px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projectRow-spacing {
+  margin: 0% 5%;
+}
+
+/* project entries have no .col-6 class furthermore */
+.project-entry {
+  /*height: 100%;*/
+  position: relative;
+  z-index: 0;
+  display: flex; */optional */
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 22%;
+  padding: 0% .5%;
+  margin: 2% 0%;
+  align-items: flex-end;
+}
+
+/* Give projects entry 'a' tags/links a class for box-shadow */
+.box-shadow {
+  border-radius: 6px;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  /*position: absolute;*/
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index:2;
+  margin-top: 0;
+  padding-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-arounds;
+
+}
+
+.project-image-height {
+
+}
+
+/* Sets padding for project entry 'p' tags*/
+.project-ptag-spacing {
+  padding: 0% 2.5%;
+  width: 100%;
+}
+
+/* Give project entry date-text a new class for its padding and margin */
+.projectDate-spacing {
+  /*padding-top: 13%;*/
+  /*margin-bottom: 0px;*/
+  width: 100%;
+  margin: 2% 0%;
+  /*position: absolute;*/
+
+}
+
+@media only screen and (max-width: 765px) {
+  .project-image-height {
+    max-height: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 770px) {
+  .date-padding {
+    padding-top: 15%
+  }
+}
+/*Flex solution */
+
+@media only screen and (max-width: 414px) {
+  /*.project-ptag-spacing {
+    padding: 30%;
+    margin: 5% 0%;
+    }*/
+
+  .date-padding {
+    padding-top: 35%;
+  }
+}
+
+
+
+/* media query changing project entries width to <50% allow it to set rows of two and maintain wrap capabilites for the projects row
+whether above or below 770px
+
+/* screens smaller than 770px should have project-entry with width of 50%
+to resize to two 50% boxes, not 4 really small 25% boxes. Code below has width+side margins ~ 50%
+results in rows of two. margin verticals set in pixels to keep project entry boxes aligned*/
+@media only screen and (max-width: 770px) {
+  .project-entry {
+    padding: 0% 3%;
+    width: 43%;
+    margin: 15px 0%;
+  }
+}
+/* screeens larger than 770px .project-entry should have a margin: 0 5%; and no padding.
+Smaller than 770px elements dont fit in ros of 2@width 50%; margin or width needs to be smaller */

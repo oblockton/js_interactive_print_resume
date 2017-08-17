@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!-- This tells the browser how to read the document. -->
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
 
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
 
-  <!-- Load the page styles. -->
+  <!-- Load the page styles. *******Added css boxes stylesheet-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/css_boxes.css" rel="stylesheet">
   <link href="css/framework.css" rel="stylesheet">
   <!-- add an interactive Google Map to the resume!  -->
 <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+<script src="js/jQuery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
   <div id="main">
@@ -27,12 +32,16 @@
     <div id="projectsGrid">
       <div id="projects">
         <h2 class="center-text">Projects</h2>
-        <div id="projectsRow" class="row">
+        <div id="projectsRow" class="row projectRow-spacing">
         </div>
       </div>
     </div>
-    <div id="education" class="gray center-text">
-      <h2>Education</h2>
+    <div id="education" class="gray">
+      <h2 class="center-text">Education</h2>
+      <div id="educationRow" class="educationRow-layout center-text">
+        <div id="schools" class="col-6"></div>
+        <div id="online" class="col-6"></div>
+      </div>
     </div>
     <div id="mapDiv">
       <h2 class="center-text">Where I've Lived and Worked</h2>
@@ -43,7 +52,10 @@
       </ul>
     </div>
   </div>
-  <script src="js/jQuery.js"></script>
+  <!-- Modal -->
+
+  <div id="modal-placeholder"></div>
+
   <script src="js/helper.js"></script>
   <script src="js/resumeBuilder.js"></script>
 </body>
