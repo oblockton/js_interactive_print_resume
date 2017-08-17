@@ -165,7 +165,7 @@ projects.display = function() {
 };
 projects.display();
 */
-
+// Build Projects section and add modals to the DOM respectively
 projects.display = function() {
   for (project in projects.projectList){
     var formattedProjectStart = HTMLprojectStart.replace("myModal", projects.projectList[project].modalID)

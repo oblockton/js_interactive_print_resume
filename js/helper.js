@@ -27,8 +27,9 @@ var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="work-descriptWidth"><br>%data%</p>';
 
-//removed col-6 from project entry(start). add class box shadow to project title.Add class date-padding to project dates.
-var HTMLprojectStart = '<div class="project-entry center-text" data-toggle="modal" data-target="#myModal"></div>';
+//removed col-6 from project entry(start). add class box shadow to project title.Add class date-padding to project dates.]
+//HTMLprojectStart should preferably be a div that has an action on hover. 
+var HTMLprojectStart = '<a class="project-entry center-text" data-toggle="modal" data-target="#myModal"></a>';
 var HTMLprojectTitle = '<div class="date-placeholder box-shadow">%data%</div>';
 var HTMLprojectDates = '<div class="date-text projectDate-spacing">%data%</div>';
 var HTMLprojectDescription = '<p class="project-ptag-spacing"><br>%data%</p>';
