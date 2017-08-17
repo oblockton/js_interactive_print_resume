@@ -28,7 +28,7 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="work-descriptWidth"><br>%data%</p>';
 
 //removed col-6 from project entry(start). add class box shadow to project title.Add class date-padding to project dates.]
-//HTMLprojectStart should preferably be a div that has an action on hover. 
+//HTMLprojectStart should preferably be a div that has an action on hover.
 var HTMLprojectStart = '<a class="project-entry center-text" data-toggle="modal" data-target="#myModal"></a>';
 var HTMLprojectTitle = '<div class="date-placeholder box-shadow">%data%</div>';
 var HTMLprojectDates = '<div class="date-text projectDate-spacing">%data%</div>';
@@ -52,7 +52,7 @@ var HTMLonlineURL = '<br><a href="#">%data%</a>';
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
-var HTMLmodal = '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">Favorite App Page</h4></div><div class="modal-body"><img class="img-responsive" src="images/555.jpeg">This was my first project in this class. I learned a lot about HTML and CSS.</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>'
+var HTMLmodal = '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">Project Title</h4></div><div class="modal-body"><img class="img-responsive" src="images/coding-image-holder.jpg" alt="Image Placeholder">Your Project description goes here. Projects description can be moved to a "p" tag within the Modal HTML  BODY section.</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>'
 
 /*
 The Internationalize Names button uses this code to hook up your code to the button that's appended in resumeBuilder.js
