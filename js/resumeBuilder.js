@@ -121,9 +121,10 @@ var projects = {
       "title" : "Interactive Resume",
       "dates" : "Current",
       "description":"Build an interactive resume using Javascript",
-      "modaldescript" : "  Build an interactive and responsive web based resume. This webpage should smoothly adjust its' display properties based on viewing device. \
-      I also designed this web application to print the desktop view, regardless of viewing device.\
-       I also integrated bootstrap to create the modals ,however the underlying framework is custom built.",
+      "modaldescript" : "  Build an interactive and responsive web based resume/portfolio. This webpage should smoothly adjust its' display properties based on viewing device. \
+      I designed this web application to be interactive when viewed in the browser. It's function as a printed resume must also be maintained if the web page were to be printed.\
+      This dual purpose was achieved with a minimalistic approach to design. Limiting the extent of content hidden in link, buttons,etc. I integrated bootstrap to create the modals,\
+      however the underlying framework is purpose built.",
       "images" : "images/fry.jpg",
       "projectlink" : [
         {
@@ -149,8 +150,12 @@ var projects = {
       "projectlink" : [
         {
           "Link" : "https://github.com/nsetnik0703/nightwatch",
-          "Linktxt" : "Game of Thrones Effect"
+          "Linktxt" : "Game of Thrones Effect - Github Repository"
         },
+        {
+          "Link" : "https://prezi.com/view/M1T99BpHMzx3crXV7lWi/",
+          "Linktxt" : "Analysis Presentation"
+        }
       ],
       "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-2",
