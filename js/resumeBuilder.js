@@ -273,8 +273,7 @@ projects.display = function() {
         .replace('%data%',projects.projectList[project].projectlink[link].Linktxt)
         $(".modal-body:last").append(formattedModalLink)
       }
-    }
-    $("#modal-placeholder").append(HTMLmodalEnd)
+    }    
     var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projectList[project].title)
     var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projectList[project].dates)
     var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projectList[project].description)

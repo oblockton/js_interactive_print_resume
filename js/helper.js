@@ -52,7 +52,7 @@ var HTMLonlineURL = '<br><a href="#">%data%</a>';
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
-var HTMLmodalStart = '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">Project Title</h4></div><div class="modal-body center-text"><img class="img-responsive" src="images/coding-image-holder.jpg" alt="Image Placeholder">Your Project description goes here.<br>'
+var HTMLmodalStart = '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title" id="myModalLabel">Project Title</h4></div><div class="modal-body center-text"><img class="img-responsive" src="images/coding-image-holder.jpg" alt="Image Placeholder">Your Project description goes here.<br></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>'
 var HTMLmodal_proj_links = '<a href="#">%data%</a>'
 var HTMLmodalEnd = '</div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div>'
 
