@@ -120,11 +120,11 @@ var projects = {
     {
       "title" : "Interactive Resume",
       "dates" : "Current",
-      "description":"Build an interactive resume using Javascript",
-      "modaldescript" : "  Build an interactive and responsive web based resume/portfolio. This webpage should smoothly adjust its' display properties based on viewing device. \
-      I designed this web application to be interactive when viewed in the browser. It's function as a printed resume must also be maintained if the web page were to be printed.\
-      This dual purpose was achieved with a minimalistic approach to design. Limiting the extent of content hidden in link, buttons,etc. I integrated bootstrap to create the modals,\
-      however the underlying framework is purpose built.",
+      "description":"An interactive resume using Javascript,HTML,CSS, and bootstrap. Web app must retain the function of a resume hardcopy when printed.",
+      "modaldescript" : "  An interactive and responsive web based resume/portfolio. These are the details for the web app your are currently vieweng. This web app should smoothly adjust its' display properties based on viewing device. \
+       I designed this web application to be interactive when viewed in the browser. It's function as a printed resume must also be maintained if the web page were to be printed.\
+       This dual purpose was achieved with a minimalistic approach to design. Limiting the extent of content hidden in link, buttons,etc. I integrated bootstrap to create the modals,\
+       however the underlying framework is purpose built.",
       "images" : "images/fry.jpg",
       "projectlink" : [
         {
