@@ -1,9 +1,9 @@
 // Javascript object containing information necessary for building the header: Name, Contacts, Skills.
-var apps = ["JavaScript", "Python", "HTML5", "CSS3", "Ruby", "Rails",];
+var apps = ["JavaScript", "Python","Pandas","MySQL","Matplot","SqlAlchemy", "HTML5", "CSS3"];
 var bio = {
   "name":"Omari Blockton",
   "role":"Powered By: Bay Area Native Ver 2.9",
-  "welcomeMessage": "Experienced web developer, focused on innovation and efficiency",
+  "welcomeMessage": "Experienced data analyst, focused on innovation and efficiency",
   "biopic" :"Lorem Ipsum",
   "contacts": {"Mobile": "510-421-1379",
       "address": "3230 Storer Ave, Oakland,Ca 94619",
@@ -70,11 +70,29 @@ var work = {
       "description" : "Engineer Googly things"
     },
     {
+      "employer" : "Farmstead - farmsteadapp.com",
+      "title" : "Operations Manager",
+      "location" : "San Francisco, Ca",
+      "dates" : "December 2018- present",
+      "description" : "Manage daily operation of order processing hub."
+    },
+    {
+      "employer" : "Alfresco Heating",
+      "title" : "Lead Service/Installation Technician",
+      "location" : "Novato, Ca",
+      "dates" : "September 2015- February 2017",
+      "description" : "Lead the installation and service team."
+    },
+    {
       "employer" : "Google Shopping Express",
       "title" : "Lead Store Operator",
       "location" : "Mountain View, Ca",
       "dates" : "September 2013 - September 2015",
-      "description" : "Responsible for oversight and fulfillment of online orders at the store level. Identify areas of improvements and implement new strategies. Manage the fulfillment process with a focus on problem prevention. Train new hires and effectively cultivate a productive and welcoming team atmosphere.Ensure accuracy throughout the entire fulfillment process, and strive for complete customer satisfaction.Work with minimal supervision.Maintain and develop effective time management skills to ensure all order deadlines are met.Continuously communicate with management, including but not limited to; escalations, status reports, supply requests, statistical data updates, and customer service inquiries.Represent and maintain the Google brand image when interacting with the retail partners, and the public. "
+      "description" : "Responsible for oversight and fulfillment of online orders at the store level. Identify areas of improvements and implement new strategies. \
+      Manage the fulfillment process with a focus on problem prevention. Train new hires and effectively cultivate a productive and welcoming team atmosphere.\
+      Ensure accuracy throughout the entire fulfillment process, and strive for complete customer satisfaction.\
+      Work with minimal supervision.Maintain and develop effective time management skills to ensure all order deadlines are met.\
+      Continuously communicate with management, including but not limited to; escalations, status reports, supply requests, statistical data updates, and customer service inquiries.Represent and maintain the Google brand image when interacting with the retail partners, and the public. "
     }
   ]
 
@@ -103,50 +121,73 @@ var projects = {
       "title" : "Interactive Resume",
       "dates" : "Current",
       "description":"Build an interactive resume using Javascript",
+      "modaldescript" : "Build an interactive and responsive web based resume. This webpage should smoothly adjust its' display properties based on viewing device. \
+      I also designed this web application to print the desktop view, regardless of viewing device.\
+       I also integrated bootstrap to create the modals ,however the underlying framework is custom built.",
       "images" : "images/fry.jpg",
-      "modalID" : "modal-1"
+      "modalID" : "modal-1",
+      "modal_label" : "Interactive Resume"
     },
     {
-      "title" : "Build Personal Libraries",
-      "dates" : "Ongoing",
-      "description":"Build library of common functions for personal reference",
-      "images" : "images/fry.jpg",
-      "modalID" : "modal-2"
+      "title" : "The Game of Thrones Effect",
+      "dates" : "April 2019",
+      "description":"Exploring the tanglible impact pop culture may have on human conventions.Has Game of Throne changed the baby name trends? ",
+      "modaldescript" : "Exploring the tanglible impact pop culture may have on human conventions.This was a group project created during my tenure in the UC Berkeley Extension Data Analytics course.\
+       No restrictions were placed on topic choice. The few requirements being use of external data sources,and incorporation of at minimum: Python, Jupyter,Pandas, and Matplot\
+       Projects were to also include an analysis presentation. In our analysis we used Social Security Administration, \
+       and the equivalent UK agency to retreive our data(CSV). Our hypothesis: Game of Thrones has made an observable change to the trend in name generation.\
+       Through visualization of numerous relationships, and experimenting with Chi-Square, Fisher Exact, \
+       and linear regression models- we did observe a statistically significant change in naming trend after the debut of GoT!",
+      "images" : "images/Game_Of_Thrones.jpg",
+      "projectlink" : "https://github.com/nsetnik0703/nightwatch",
+      "projlinktext" : "Game of Thrones Effect - Github Repository",
+      "modalimage" : "images/got_modal.jpg",
+      "modalID" : "modal-2",
+      "modal_label" : "Game of Thrones"
     },
     {
       "title" : "Build Personal Libraries",
       "dates" : "8/12/2017-ongoing",
       "description":"Build library of common functions for personal reference.Build library of common functions for personal reference.",
+      "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
-      "modalID" : "modal-3"
+      "modalID" : "modal-3",
+      "modal_label" : "Build Libraries"
     },
     {
       "title" : "Build Personal Libraries",
       "dates" : "Current",
       "description":"Build library of common functions for personal reference",
+      "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
-      "modalID" : "modal-4"
+      "modalID" : "modal-4",
+      "modal_label" : "placeholder"
+    },
+    {
+      "title" : "Interactive Resume",
+      "dates" : "Current",
+      "description":"Build an interactive resume using Javascript",
+      "modaldescript" : "placeholder",
+      "images" : "images/fry.jpg",
+      "modalID" : "modal-5",
+      "modal_label" : "placeholder"
     },
     {
       "title" : "Interactive Resume",
       "dates" : "Current",
       "description":"Build an interactive resume using Javascript",
       "images" : "images/fry.jpg",
-      "modalID" : "modal-5"
+      "modalID" : "modal-6",
+      "modal_label" : "placeholder"
     },
     {
       "title" : "Interactive Resume",
       "dates" : "Current",
       "description":"Build an interactive resume using Javascript",
+      "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
-      "modalID" : "modal-6"
-    },
-    {
-      "title" : "Interactive Resume",
-      "dates" : "Current",
-      "description":"Build an interactive resume using Javascript",
-      "images" : "images/fry.jpg",
-      "modalID" : "modal-7"
+      "modalID" : "modal-7",
+      "modal_label" : "placeholder"
     },
   ]
 }
@@ -171,6 +212,12 @@ projects.display = function() {
     var formattedProjectStart = HTMLprojectStart.replace("myModal", projects.projectList[project].modalID)
     $("#projectsRow").append(formattedProjectStart)
     var formattedModal = HTMLmodal.replace("myModal", projects.projectList[project].modalID)
+    .replace("Project Title",projects.projectList[project].title)
+    .replace("myModalLabel", projects.projectList[project].modal_label)
+    .replace("images/coding-image-holder.jpg", projects.projectList[project].modalimage)
+    .replace('Your Project description goes here. Projects description can be moved to a "p" tag within the Modal HTML  BODY section.',projects.projectList[project].modaldescript)
+    .replace('#', projects.projectList[project].projectlink)
+    .replace('%data%',projects.projectList[project].projlinktext)
     $("#modal-placeholder").append(formattedModal)
     var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projectList[project].title)
     var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projectList[project].dates)
