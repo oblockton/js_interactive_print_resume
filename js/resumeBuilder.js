@@ -121,26 +121,37 @@ var projects = {
       "title" : "Interactive Resume",
       "dates" : "Current",
       "description":"Build an interactive resume using Javascript",
-      "modaldescript" : "Build an interactive and responsive web based resume. This webpage should smoothly adjust its' display properties based on viewing device. \
+      "modaldescript" : "  Build an interactive and responsive web based resume. This webpage should smoothly adjust its' display properties based on viewing device. \
       I also designed this web application to print the desktop view, regardless of viewing device.\
        I also integrated bootstrap to create the modals ,however the underlying framework is custom built.",
       "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link1" : "https://github.com/oblockton/js_interactive_print_resume",
+          "Linktxt" : "Interactive Resume"
+        },
+      ],
+      "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-1",
       "modal_label" : "Interactive Resume"
     },
     {
       "title" : "The Game of Thrones Effect",
       "dates" : "April 2019",
-      "description":"Exploring the tanglible impact pop culture may have on human conventions.Has Game of Throne changed the baby name trends? ",
-      "modaldescript" : "Exploring the tanglible impact pop culture may have on human conventions.This was a group project created during my tenure in the UC Berkeley Extension Data Analytics course.\
-       No restrictions were placed on topic choice. The few requirements being use of external data sources,and incorporation of at minimum: Python, Jupyter,Pandas, and Matplot\
+      "description":" Exploring the tanglible impact pop culture may have on human conventions.Has Game of Throne changed the baby name trends? ",
+      "modaldescript" : "  Exploring the tanglible impact pop culture may have on human conventions.This was a group project created during my tenure in the UC Berkeley Extension Data Analytics course.\
+       No restrictions were placed on topic choice. The few requirements being, use of external data sources,and incorporation of at minimum: Python, Jupyter,Pandas, and Matplot.\
        Projects were to also include an analysis presentation. In our analysis we used Social Security Administration, \
        and the equivalent UK agency to retreive our data(CSV). Our hypothesis: Game of Thrones has made an observable change to the trend in name generation.\
        Through visualization of numerous relationships, and experimenting with Chi-Square, Fisher Exact, \
        and linear regression models- we did observe a statistically significant change in naming trend after the debut of GoT!",
       "images" : "images/Game_Of_Thrones.jpg",
-      "projectlink" : "https://github.com/nsetnik0703/nightwatch",
-      "projlinktext" : "Game of Thrones Effect - Github Repository",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/nsetnik0703/nightwatch",
+          "Linktxt" : "Game of Thrones Effect"
+        },
+      ],
       "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-2",
       "modal_label" : "Game of Thrones"
@@ -151,41 +162,75 @@ var projects = {
       "description":"Build library of common functions for personal reference.Build library of common functions for personal reference.",
       "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/js_interactive_print_resume",
+          "Linktxt" : "Libraries"
+        },
+      ],
+      "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-3",
       "modal_label" : "Build Libraries"
     },
     {
-      "title" : "Build Personal Libraries",
+      "title" : "Ride Share Data visualization with Matplot",
       "dates" : "Current",
-      "description":"Build library of common functions for personal reference",
+      "description":"Analyze ride share data with Pandas and matplot",
       "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/",
+          "Linktxt" : "Matplot"
+        },
+      ],
+      "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-4",
       "modal_label" : "placeholder"
     },
     {
-      "title" : "Interactive Resume",
+      "title" : "Surf's Up SqlAlchemy",
       "dates" : "Current",
-      "description":"Build an interactive resume using Javascript",
+      "description":"SqlAlchemy project goes here",
       "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/",
+          "Linktxt" : "Surf's Up"
+        },
+      ],
+      "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-5",
       "modal_label" : "placeholder"
     },
     {
-      "title" : "Interactive Resume",
+      "title" : "Kickstart Excellence",
       "dates" : "Current",
-      "description":"Build an interactive resume using Javascript",
+      "description":"Analyze Kickstarter metrics with Excel",
       "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/",
+          "Linktxt" : "Excel Kickstart"
+        },
+      ],
+      "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-6",
       "modal_label" : "placeholder"
     },
     {
-      "title" : "Interactive Resume",
+      "title" : "VBA Stock Performance",
       "dates" : "Current",
-      "description":"Build an interactive resume using Javascript",
+      "description":"VBA Scripting Work Out",
       "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+
+        },
+      ],
+      "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-7",
       "modal_label" : "placeholder"
     },
@@ -211,14 +256,20 @@ projects.display = function() {
   for (project in projects.projectList){
     var formattedProjectStart = HTMLprojectStart.replace("myModal", projects.projectList[project].modalID)
     $("#projectsRow").append(formattedProjectStart)
-    var formattedModal = HTMLmodal.replace("myModal", projects.projectList[project].modalID)
+    var formattedModalStart = HTMLmodalStart.replace("myModal", projects.projectList[project].modalID)
     .replace("Project Title",projects.projectList[project].title)
     .replace("myModalLabel", projects.projectList[project].modal_label)
     .replace("images/coding-image-holder.jpg", projects.projectList[project].modalimage)
-    .replace('Your Project description goes here. Projects description can be moved to a "p" tag within the Modal HTML  BODY section.',projects.projectList[project].modaldescript)
-    .replace('#', projects.projectList[project].projectlink)
-    .replace('%data%',projects.projectList[project].projlinktext)
-    $("#modal-placeholder").append(formattedModal)
+    .replace('Your Project description goes here.',projects.projectList[project].modaldescript)
+    $("#modal-placeholder").append(formattedModalStart)
+    if (projects.projectList[project].projectlink.length > 0) {
+      for (link in projects.projectList[project].projectlink) {
+        var formattedModalLink = HTMLmodal_proj_links.replace('#', projects.projectList[project].projectlink[link].Link)
+        .replace('%data%',projects.projectList[project].projectlink[link].Linktxt)
+        $(".modal-body:last").append(formattedModalLink)
+      }
+    }
+    $("#modal-placeholder").append(HTMLmodalEnd)
     var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projectList[project].title)
     var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projectList[project].dates)
     var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projectList[project].description)
