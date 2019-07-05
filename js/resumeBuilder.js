@@ -1,12 +1,12 @@
 // Javascript object containing information necessary for building the header: Name, Contacts, Skills.
-var apps = ["JavaScript", "Python","Pandas","MySQL","Matplot","SqlAlchemy", "HTML5", "CSS3"];
+var apps = ["JavaScript","Plotly","Leaflet","Python",'Pandas','Matplot',"MySQL","SqlAlchemy","MongoDB",'Tableau',"HTML5","CSS","BeautifulSoup", 'MS Suite'];
 var bio = {
   "name":"Omari Blockton",
   "role":"Powered By: Bay Area Native Ver 2.9",
-  "welcomeMessage": "Experienced data analyst, focused on innovation and efficiency",
+  "welcomeMessage": "Experienced data analyst with a solid foundation in operations.",
   "biopic" :"Lorem Ipsum",
-  "contacts": {"Mobile": "510-421-1379",
-      "address": "3230 Storer Ave, Oakland,Ca 94619",
+  "contacts": {"Mobile": "",
+      "address": "Oakland,Ca 94619",
       "Email" : "oblockton@gmail.com",
       "Github" : "oblockton",
       "gitHubLink" : "https://github.com/oblockton"
@@ -33,7 +33,7 @@ buildBio();
 
 function formatTopContacts() {
   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.Mobile);
-  $("#topContacts").prepend(formattedMobile);
+  // $("#topContacts").prepend(formattedMobile); #removee mobile contact.-SPAM caution.
   var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.address);
   $("#topContacts").prepend(formattedLocation);
   var formattedEmail = HTMLemail.replace("%data%", bio.contacts.Email);
@@ -63,25 +63,30 @@ buildSkills();
 var work = {
   "jobs" : [
     {
-      "employer" : "Google",
-      "title" : "Engineer",
-      "location" : "Mountain View, Ca",
-      "dates" : "December 2018- present",
-      "description" : "Engineer Googly things"
-    },
-    {
       "employer" : "Farmstead - farmsteadapp.com",
       "title" : "Operations Manager",
       "location" : "San Francisco, Ca",
       "dates" : "December 2018- present",
-      "description" : "Manage daily operation of order processing hub."
+      "description" : " Efficiently and effectively manage the day-to-day operations of order processing hubs.- Act as the primary point of contact and liaison between the operations team and upper management, customer \
+      service, software engineering, and external vendors.- Manage the processing of customer orders, ensuring orders are delivered on-time and in full.\
+      Create and/or implement new strategies or processes to meet company goals and address KPI’s. Working closely with and reporting directly to the CEO and Head of Operations.\
+      Own, lead, and manage projects regarding; process workflow, software improvements, operational budgeting (labor, inventory, and supplies), merchandising & layout, and device procurement.\
+      Manage inventory levels throughout the product lifecycle. Minimize out of stocks, identify areas of improvement, track purchase orders, and execute limited product buying.\
+      Supervise and lead a daily team of 8-12 direct reports (Leads,Ops Associates, receivers). Perform arbitrational duties regarding conflict resolution. Interview, train and retain new hires.\
+      Identify bugs, errors, and areas of improvement in the proprietary operations software. Perform low level IT functions as necessary: diagnose and resolve scanner, handheld device, label printer, and computer issues.\
+      Create a welcoming atmosphere for direct reports. Foster and build their skills. Assist in scheduling and tracking time off requests."
     },
     {
       "employer" : "Alfresco Heating",
       "title" : "Lead Service/Installation Technician",
       "location" : "Novato, Ca",
       "dates" : "September 2015- February 2017",
-      "description" : "Lead the installation and service team."
+      "description" : "Lead the installation and service team. Successfully diagnose and repair issues related to gas and electric patio heater malfunctions, on site or in \
+      shop. This includes the heater and any external associated components. Independently perform simple installations. Assist in complex installations, performing all functions related to \
+      gas plumbing and electrical. Participate in city/county inspections. Write, organize, and file invoices, customer requests, measurements, photos, and/or any other data necessary \
+      according to company SOP. Quote and foster sales of product units and installation projects. Build and maintain customer relationships. \
+      Proactively generate new leads. Effectively manage a full weekly calendar of commercial and residential scheduled appointments, working \
+      independently. Maintain company vehicle, and on-board inventory volume."
     },
     {
       "employer" : "Google Shopping Express",
@@ -118,8 +123,31 @@ displayWork();
 var projects = {
   "projectList" : [
     {
+      "title" : "NASDASH",
+      "dates" : "Ongoing",
+      "description":"An interactive NASDAQ web dashboard & API service, providing a visual NASDAQ market and news overview and API data stream.",
+      "modaldescript" : "  An interactive web dashbard built to provide NASDAQ price action and market news visualization. Users may select from any stock listed in the NASDAQ and see its recent(present-3 days prior) or historical price action as far back as 10yrs. \
+       Relevent news items pretaining to the selected NASDAQ ticker, multiple , market overview tables and an economic events calendar are provided for exploration of market trends. News items are plotted on the timeseries plot of recent price action, \
+       allowing users to determine if any recent news items may have affected recent price action. A user may then explore a table of the plotted news articles for further information. Additionally, all information used to build \
+       the various tables and plots are available through API endpoints that provide clean data in JSON format. The  original data has been sourced from a combination of external API requests and html table scrapes from various industry sources.",
+      "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link1" : "https://dudley-backbacon-95036.herokuapp.com/",
+          "Linktxt" : "NASDASH"
+        },
+        {
+          "Link1" : "https://github.com/nickmccarty/Project-2/tree/dev/omari%20-%20newsplot",
+          "Linktxt" : "NASDASH Repository"
+        },
+      ],
+      "modalimage" : "images/fry.jpg",
+      "modalID" : "modal-0",
+      "modal_label" : "NASDASH"
+    },
+    {
       "title" : "Interactive Resume",
-      "dates" : "Current",
+      "dates" : "Ongoing",
       "description":"An interactive resume using Javascript,HTML,CSS, and bootstrap. Web app must retain the function of a resume hardcopy when printed.",
       "modaldescript" : "  An interactive and responsive web based resume/portfolio. These are the details for the web app your are currently vieweng. This web app should smoothly adjust its' display properties based on viewing device. \
        I designed this web application to be interactive when viewed in the browser. It's function as a printed resume must also be maintained if the web page were to be printed.\
@@ -162,24 +190,63 @@ var projects = {
       "modal_label" : "Game of Thrones"
     },
     {
-      "title" : "Build Personal Libraries",
-      "dates" : "8/12/2017-ongoing",
-      "description":"Build library of common functions for personal reference.Build library of common functions for personal reference.",
-      "modaldescript" : "placeholder",
+      "title" : "Weather Data Web Dashboard",
+      "dates" : "Apr 2019",
+      "description":"A web dashboard to provide weather data analysis results, raw data, and Matplot plot images in a conveniently accessible format.",
+      "modaldescript" : "How can we provide end users and decision makers a convenient way to visualize and explore the results of an analysis? One way is through a web dashboard. Using the data and image outputs of an accompanied Jupyter notebook,\
+      , build a web dashboard to visualize the results using only HTML and JS. ",
       "images" : "images/fry.jpg",
       "projectlink" : [
         {
-          "Link" : "https://github.com/oblockton/js_interactive_print_resume",
-          "Linktxt" : "Libraries"
+          "Link" : "https://oblockton.github.io/WeatherData_Dashboard/",
+          "Linktxt" : "Weather Dashboard - Deployed Github page"
+        },
+        {
+          "Link" : "https://github.com/oblockton/WeatherData_Dashboard",
+          "Linktxt" : "Weather Dashboard - Repository"
         },
       ],
-      "modalimage" : "images/got_modal.jpg",
+      "modalimage" : "images/fry.jpg",
       "modalID" : "modal-3",
-      "modal_label" : "Build Libraries"
+      "modal_label" : "weatherdashboard"
+    },
+    {
+      "title" : "Surf's Up SqlAlchemy",
+      "dates" : "May 2019",
+      "description":"Using Flask, SqlAlchemy, Python, and Matplot for ETL, visualization, and api service via Flask endpoints.",
+      "modaldescript" : "An excercise in serving data to end users via Flask url endpoints. In this project I have analyzed data on Hawaii weather such as weather, rainfall, average temp in an attempt to schedule a hypothetical \
+      vacation during the best period for Hawaiian weather. Additionally I have been challenged to use Flask to build endpoints where users can consume that data used in the analysis. For fellow data science vacationers I have also provided \
+      a Jupyter notebook containing helpful Matplot visualizations of the data.",
+      "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/Climate_Alchemist",
+          "Linktxt" : "Surf's Up Repository"
+        },
+      ],
+      "modalimage" : "images/fry.jpg",
+      "modalID" : "modal-4",
+      "modal_label" : "Climate_Alchemist"
+    },
+    {
+      "title" : "Mongod of Mars",
+      "dates" : "May 2019",
+      "description":"Using BeautifulSoup,FLask,and MongoDB to scrapes various websites for data related to the Mission to Mars and display the information in a single HTML page.",
+      "modaldescript": "Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above. ",
+      "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/Scraping-Mars-soup-for-Mongod",
+          "Linktxt" : "Mars Scrape Repository"
+        },
+      ],
+      "modalimage" : "images/fry.jpg",
+      "modalID" : "modal-5",
+      "modal_label" : "marsmongo"
     },
     {
       "title" : "Ride Share Data visualization with Matplot",
-      "dates" : "Current",
+      "dates" : "May 2019",
       "description":"Analyze ride share data with Pandas and matplot",
       "modaldescript" : "placeholder",
       "images" : "images/fry.jpg",
@@ -190,37 +257,6 @@ var projects = {
         },
       ],
       "modalimage" : "images/got_modal.jpg",
-      "modalID" : "modal-4",
-      "modal_label" : "placeholder"
-    },
-    {
-      "title" : "Surf's Up SqlAlchemy",
-      "dates" : "Current",
-      "description":"SqlAlchemy project goes here",
-      "modaldescript" : "placeholder",
-      "images" : "images/fry.jpg",
-      "projectlink" : [
-        {
-          "Link" : "https://github.com/oblockton/",
-          "Linktxt" : "Surf's Up"
-        },
-      ],
-      "modalimage" : "images/got_modal.jpg",
-      "modalID" : "modal-5",
-      "modal_label" : "placeholder"
-    },
-    {
-      "title" : "Kickstart Excellence",
-      "dates" : "Current",
-      "description":"Analyze Kickstarter metrics with Excel",
-      "images" : "images/fry.jpg",
-      "projectlink" : [
-        {
-          "Link" : "https://github.com/oblockton/",
-          "Linktxt" : "Excel Kickstart"
-        },
-      ],
-      "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-6",
       "modal_label" : "placeholder"
     },
@@ -228,16 +264,34 @@ var projects = {
       "title" : "VBA Stock Performance",
       "dates" : "Current",
       "description":"VBA Scripting Work Out",
-      "modaldescript" : "placeholder",
-      "images" : "images/fry.jpg",
+      "modaldescript" : "Using VBA scripting to manipulate, and visualize market data.",
+      "images" : "images/stockmarket.jpg",
       "projectlink" : [
         {
-
+          "Link" : "https://github.com/oblockton/Market_Metrics_VBA",
+          "Linktxt" : "Scripting Stock Data with VBA"
         },
       ],
-      "modalimage" : "images/got_modal.jpg",
+      "modalimage" : "images/stockmarket.jpg",
       "modalID" : "modal-7",
-      "modal_label" : "placeholder"
+      "modal_label" : "VBAstocks"
+    },
+    {
+      "title" : "Accounting with Python",
+      "dates" : " Feb 2019",
+      "description":"Create a python script to perform basic accounting functions for a theoretical bank and election.",
+      "modaldescript" : "This scripting for the bank and election accounting should be pure python scipting\
+       without incorporation of additional library functions. For each application the results should be output to a text file.",
+      "images" : "images/pybank.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/Python_Accounting",
+          "Linktxt" : "Accouting with Python"
+        },
+      ],
+      "modalimage" : "images/pybank.jpg",
+      "modalID" : "modal-8",
+      "modal_label" : "Python Accounting"
     },
   ]
 }
@@ -273,7 +327,7 @@ projects.display = function() {
         .replace('%data%',projects.projectList[project].projectlink[link].Linktxt)
         $(".modal-body:last").append(formattedModalLink)
       }
-    }    
+    }
     var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projectList[project].title)
     var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projectList[project].dates)
     var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projectList[project].description)
@@ -383,16 +437,16 @@ $('#main').append(internationalizeButton);
 
 $("#mapDiv").append(googleMap);
 
-function formatFooterContacts() {
-  var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.Mobile);
-  $("#footerContacts").prepend(formattedMobile);
-  var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.address);
-  $("#footerContacts").prepend(formattedLocation);
-  var formattedEmail = HTMLemail.replace("%data%", bio.contacts.Email);
-  $("#footerContacts").append(formattedEmail);
-  var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.Github);
-  $("#footerContacts").append(formattedGithub);
-  //console.log(bio.contact.Mobile);
-};
+// function formatFooterContacts() {
+//   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.Mobile);
+//   $("#footerContacts").prepend(formattedMobile);
+//   var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.address);
+//   $("#footerContacts").prepend(formattedLocation);
+//   var formattedEmail = HTMLemail.replace("%data%", bio.contacts.Email);
+//   $("#footerContacts").append(formattedEmail);
+//   var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.Github);
+//   $("#footerContacts").append(formattedGithub);
+//   //console.log(bio.contact.Mobile);
+// };
 
-formatFooterContacts();
+ formatFooterContacts();
