@@ -134,36 +134,18 @@ var projects = {
       "projectlink" : [
         {
           "Link1" : "https://dudley-backbacon-95036.herokuapp.com/",
-          "Linktxt" : "NASDASH"
+          "Linktxt" : "NASDASH - Deployed App"
         },
         {
           "Link1" : "https://github.com/nickmccarty/Project-2/tree/dev/omari%20-%20newsplot",
-          "Linktxt" : "NASDASH Repository"
+          "Linktxt" : "NASDASH - Repository"
         },
       ],
       "modalimage" : "images/fry.jpg",
       "modalID" : "modal-0",
       "modal_label" : "NASDASH"
     },
-    {
-      "title" : "Interactive Resume",
-      "dates" : "Ongoing",
-      "description":"An interactive resume using Javascript,HTML,CSS, and bootstrap. Web app must retain the function of a resume hardcopy when printed.",
-      "modaldescript" : "  An interactive and responsive web based resume/portfolio. These are the details for the web app your are currently vieweng. This web app should smoothly adjust its' display properties based on viewing device. \
-       I designed this web application to be interactive when viewed in the browser. It's function as a printed resume must also be maintained if the web page were to be printed.\
-       This dual purpose was achieved with a minimalistic approach to design. Limiting the extent of content hidden in link, buttons,etc. I integrated bootstrap to create the modals,\
-       however the underlying framework is purpose built.",
-      "images" : "images/fry.jpg",
-      "projectlink" : [
-        {
-          "Link1" : "https://github.com/oblockton/js_interactive_print_resume",
-          "Linktxt" : "Interactive Resume"
-        },
-      ],
-      "modalimage" : "images/got_modal.jpg",
-      "modalID" : "modal-1",
-      "modal_label" : "Interactive Resume"
-    },
+    ///////////////////////////////////////////////////////////////////////
     {
       "title" : "The Game of Thrones Effect",
       "dates" : "April 2019",
@@ -187,14 +169,33 @@ var projects = {
       ],
       "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-2",
-      "modal_label" : "Game of Thrones"
+      "modal_label" : "Game_of_Thrones"
     },
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "title" : "Flask O' Plotly",
+      "dates" : "June 2019",
+      "description":"Using Flask, SqlAlchemy, Python, HTML, JS, and Plotly for ETL,analysis and web visualization,with api service via Flask endpoints.",
+      "modaldescript" : "Building an interactive dashboard to explore the Belly Button Biodiversity DataSet. Plotly.js is used to build interactive charts for the dashboard.\
+       All plots should dynamically update based on user selection of test sample ID. Please view the repository readME for more information.",
+      "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://github.com/oblockton/Flask_of_Plotly",
+          "Linktxt" : "Flask O' Plotly - Repository"
+        },
+      ],
+      "modalimage" : "images/fry.jpg",
+      "modalID" : "modal-4",
+      "modal_label" : "flask_plotly"
+    },
+    /////////////////////////////////////////////////////////////////
     {
       "title" : "Weather Data Web Dashboard",
       "dates" : "Apr 2019",
       "description":"A web dashboard to provide weather data analysis results, raw data, and Matplot plot images in a conveniently accessible format.",
       "modaldescript" : "How can we provide end users and decision makers a convenient way to visualize and explore the results of an analysis? One way is through a web dashboard. Using the data and image outputs of an accompanied Jupyter notebook,\
-      , build a web dashboard to visualize the results using only HTML and JS. ",
+      , build a web dashboard to visualize my analysis results using only HTML and Javascript. ",
       "images" : "images/fry.jpg",
       "projectlink" : [
         {
@@ -210,13 +211,14 @@ var projects = {
       "modalID" : "modal-3",
       "modal_label" : "weatherdashboard"
     },
+    ///////////////////////////////////////////////////////////
     {
       "title" : "Surf's Up SqlAlchemy",
       "dates" : "May 2019",
       "description":"Using Flask, SqlAlchemy, Python, and Matplot for ETL, visualization, and api service via Flask endpoints.",
       "modaldescript" : "An excercise in serving data to end users via Flask url endpoints. In this project I have analyzed data on Hawaii weather such as weather, rainfall, average temp in an attempt to schedule a hypothetical \
       vacation during the best period for Hawaiian weather. Additionally I have been challenged to use Flask to build endpoints where users can consume that data used in the analysis. For fellow data science vacationers I have also provided \
-      a Jupyter notebook containing helpful Matplot visualizations of the data.",
+      a Jupyter notebook containing in depth analysis, my processes, and helpful Matplot visualizations of the data.",
       "images" : "images/fry.jpg",
       "projectlink" : [
         {
@@ -228,6 +230,7 @@ var projects = {
       "modalID" : "modal-4",
       "modal_label" : "Climate_Alchemist"
     },
+    /////////////////////////////////////////////////////////////////////////////////////
     {
       "title" : "Mongod of Mars",
       "dates" : "May 2019",
@@ -244,6 +247,7 @@ var projects = {
       "modalID" : "modal-5",
       "modal_label" : "marsmongo"
     },
+    ///////////////////////////////////////////////////////////////////////////////////
     {
       "title" : "Ride Share Data visualization with Matplot",
       "dates" : "May 2019",
@@ -252,14 +256,15 @@ var projects = {
       "images" : "images/fry.jpg",
       "projectlink" : [
         {
-          "Link" : "https://github.com/oblockton/",
+          "Link" : "https://github.com/oblockton/Rideshare_Insight_Visualization",
           "Linktxt" : "Matplot"
         },
       ],
       "modalimage" : "images/got_modal.jpg",
       "modalID" : "modal-6",
-      "modal_label" : "placeholder"
+      "modal_label" : "rideshare"
     },
+    ///////////////////////////////////////////////////////////////////////////////////
     {
       "title" : "VBA Stock Performance",
       "dates" : "Current",
@@ -276,6 +281,7 @@ var projects = {
       "modalID" : "modal-7",
       "modal_label" : "VBAstocks"
     },
+    /////////////////////////////////////////////////////////////////////////////////////////////
     {
       "title" : "Accounting with Python",
       "dates" : " Feb 2019",
@@ -291,7 +297,27 @@ var projects = {
       ],
       "modalimage" : "images/pybank.jpg",
       "modalID" : "modal-8",
-      "modal_label" : "Python Accounting"
+      "modal_label" : "Python_Accounting"
+    },
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    {
+      "title" : "Interactive Resume",
+      "dates" : "Ongoing",
+      "description":"An interactive resume using Javascript,HTML,CSS, and bootstrap. Web app must retain the function of a resume hardcopy when printed.",
+      "modaldescript" : "  An interactive and responsive web based resume/portfolio. These are the details for the web app your are currently vieweng. This web app should smoothly adjust its' display properties based on viewing device. \
+       I designed this web application to be interactive when viewed in the browser. It's function as a printed resume must also be maintained if the web page were to be printed.\
+       This dual purpose was achieved with a minimalistic approach to design. Limiting the extent of content hidden in link, buttons,etc. I integrated bootstrap to create the modals,\
+       however the underlying framework is purpose built.",
+      "images" : "images/fry.jpg",
+      "projectlink" : [
+        {
+          "Link1" : "https://github.com/oblockton/js_interactive_print_resume",
+          "Linktxt" : "Interactive Resume"
+        },
+      ],
+      "modalimage" : "images/got_modal.jpg",
+      "modalID" : "modal-resume",
+      "modal_label" : "Interactive_Resume"
     },
   ]
 }
