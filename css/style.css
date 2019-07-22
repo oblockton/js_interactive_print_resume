@@ -135,9 +135,14 @@ a {
   text-align: center;
 }
 
-#skills-h3 {
+#skills-h3,
+#devskills-h3 {
   color: #f5ae23;
-  display: none;
+  /* display: none; */
+}
+
+#skillrow {
+  flex-wrap: nowrap;
 }
 
 .orange {

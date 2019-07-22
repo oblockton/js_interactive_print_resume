@@ -17,8 +17,11 @@ var HTMLlocation = '<li class="flex-box"><span class="orange-text">location</spa
 var HTMLbioPic = '<img src="%data%" class="biopic" alt="profile picture">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
+var HTMLskillsStart = '<div id="skillbox"><h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul></div>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+
+var HTMLdevskillsStart = '<div id="devskillbox"><h3 id="devskills-h3">Dev Tools:</h3><ul id="devskills" class="flex-box"></ul></div>';
+var HTMLdevskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry col-12 center-text"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
@@ -26,7 +29,8 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="work-descriptWidth"><br>%data%</p>';
-
+var HTMLaccompstart = '<ul class="accomp-start"><h5>Accomplishments: </h5></ul>';
+var HTMLaccomplishment = '<li class="accomp-entry">%data%</li>';
 //removed col-6 from project entry(start). add class box shadow to project title.Add class date-padding to project dates.]
 //HTMLprojectStart should preferably be a div that has an action on hover.
 var HTMLprojectStart = '<a class="project-entry center-text" data-toggle="modal" data-target="#myModal"></a>';
@@ -42,7 +46,7 @@ var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
-var HTMLonlineClasses = '<h3>Online Classes</h3>';
+var HTMLonlineClasses = '<h3>Online Courses</h3>';
 var HTMLonlineStart = '<div class="online-entry"></div>';
 var HTMLonlineTitle = '<a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
