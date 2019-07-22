@@ -514,7 +514,7 @@ function inName(name) {
 }
 $('#main').append(internationalizeButton);
 
-$("#mapDiv").append(googleMap);
+// $("#mapDiv").append(googleMap);
 
 // function formatFooterContacts() {
 //   var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.Mobile);
