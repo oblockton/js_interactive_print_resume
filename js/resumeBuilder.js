@@ -153,7 +153,7 @@ var projects = {
        Relevent news items pretaining to the selected NASDAQ ticker, market overview tables, and an economic events calendar are provided for exploration of market trends. News items are plotted on the timeseries plot of recent price action, \
        allowing users to determine if any recent news items may have affected recent price action. A user may then explore a table of the plotted news articles for further information. Additionally, all information used to build \
        the various tables and plots are available through API endpoints that provide clean data in JSON format. The  original data has been sourced from a combination of external API requests and html table scraping from various industry sources.",
-      "images" : "images/fry.jpg",
+      "images" : "images/nasdashweb.jpg",
       "projectlink" : [
         {
           "Link" : "https://nasdash.herokuapp.com/",
@@ -164,7 +164,7 @@ var projects = {
           "Linktxt" : "NASDASH - Repository"
         },
       ],
-      "modalimage" : "images/fry.jpg",
+      "modalimage" : "images/nasdashweb.jpg",
       "modalID" : "modal-0",
       "modal_label" : "NASDASH"
     },
@@ -308,7 +308,7 @@ var projects = {
     //   "modalimage" : "images/got_modal.jpg",
     //   "modalID" : "modal-6",
     //   "modal_label" : "rideshare"
-    },
+    //},
     ///////////////////////////////////////////////////////////////////////////////////
     // {
     //   "title" : "VBA Stock Performance",
