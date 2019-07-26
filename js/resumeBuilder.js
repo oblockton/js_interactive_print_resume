@@ -248,7 +248,7 @@ var projects = {
           "Linktxt" : "Surf's Up Repository"
         },
       ],
-      "modalimage" : "images/daily-normals.jpg",
+      "modalimage" : "images/daily-normals.png",
       "modalID" : "modal-4",
       "modal_label" : "Climate_Alchemist"
     },
