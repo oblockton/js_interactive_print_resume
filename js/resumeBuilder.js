@@ -241,14 +241,14 @@ var projects = {
       "modaldescript" : "An excercise in serving data to end users via Flask url endpoints. In this project I have analyzed data on Hawaii weather such as weather, rainfall, average temp in an attempt to schedule a hypothetical \
       vacation during the best period for Hawaiian weather. Additionally I have been challenged to use Flask to build endpoints where users can consume that data used in the analysis. For fellow data science vacationers I have also provided \
       a Jupyter notebook containing in depth analysis, my processes, and helpful Matplot visualizations of the data.",
-      "images" : "images/fry.jpg",
+      "images" : "images/daily-normals.png",
       "projectlink" : [
         {
           "Link" : "https://github.com/oblockton/Climate_Alchemist",
           "Linktxt" : "Surf's Up Repository"
         },
       ],
-      "modalimage" : "images/fry.jpg",
+      "modalimage" : "images/daily-normals.jpg",
       "modalID" : "modal-4",
       "modal_label" : "Climate_Alchemist"
     },
