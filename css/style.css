@@ -40,6 +40,12 @@ h6 {
   margin: 0 5%;
 }
 */
+
+#projectsGrid {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .work-entry{
   padding-bottom: 2%;
 }
@@ -128,7 +134,9 @@ a {
 }
 
 #workExperience {
-  padding-bottom: 3%,
+  padding-bottom: 3%;
+  padding-left:10%;
+  padding-right: 10%
 }
 
 .center-text {
@@ -191,7 +199,7 @@ a {
 
 
 .center-content {
-  padding: 2.5% 5%;
+  padding: 2.5% 10% 2% 10%;
 }
 
 ul {
@@ -266,6 +274,9 @@ span {
 
 
  /* Education Row formating */
+ #education {
+   padding:0% 10% 2% 10%;
+ }
 
  .educationRow-layout {
    width: 100%;

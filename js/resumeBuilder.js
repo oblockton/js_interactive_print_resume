@@ -1,12 +1,12 @@
 // Javascript object containing information necessary for building the header: Name, Contacts, Skills.
-var apps = ["JavaScript","Plotly","Leaflet","Python",'Pandas','Matplot',"MySQL","SqlAlchemy","MongoDB",'Tableau',"HTML5","CSS","BeautifulSoup", 'MS Suite'];
+var apps = ["JavaScript","Plotly","Python Data Science libraries","MySQL","SqlAlchemy","MongoDB",'Tableau',"HTML5","CSS",'MS Suite', 'Gsuite'];
 var bio = {
   "name":"Omari Blockton",
   "role":"Powered By: Bay Area Native Ver 2.9",
   "welcomeMessage": "Experienced data analyst with a solid foundation in operations.",
   "biopic" :"Lorem Ipsum",
   "contacts": {"Mobile": "",
-      "address": "Oakland,Ca 94619",
+      "address": "Oakland,Ca",
       "Email" : "oblockton@gmail.com",
       "Github" : "oblockton",
       "gitHubLink" : "https://github.com/oblockton"
@@ -15,7 +15,7 @@ var bio = {
     "Adaptabilty",
      "Efficiency"]
    ,
-   'devtools':["JavaScript","Plotly","Leaflet","Python",'Pandas','Matplot',"MySQL","SqlAlchemy","MongoDB",'Tableau',"HTML5","CSS","BeautifulSoup", 'MS Suite']
+   'devtools':["JavaScript","Plotly","Python Data Science libraries","MySQL","SqlAlchemy","MongoDB",'Tableau',"HTML5","CSS",'MS Suite', 'Gsuite']
 
     // `Develepoment Applications: ${apps}`
 };
@@ -146,23 +146,41 @@ displayWork();
 var projects = {
   "projectList" : [
     {
+      "title" : "Erase Hate",
+      "dates" : "Ongoing",
+      "description":"AWS deployed,scalable web application using  machine learning and neural networks to classify hate speech in text and social media posts. Built with Python. Deployed on AWS Beanstalk. ",
+      "modaldescript" : " EraseHateApp.com allows users to classify the contents of text as Hateful, Harmful, or Neither. The application allows users to choose multiple sources of text, and currently two classification methods. \
+      One model uses Logistic Regression and Linear Support Vector Classification, while the other implements a Long Short-Term Memory method of classification. The complete application consists of two web servers, \
+      a front-end server that produces the visible web pages, and a dedicated model server that strictly respond to request for classification. The core functions were built using Flask,Keras,NLTK,SciKit,JS.",
+      "images" : "images/erasehate.jpg",
+      "projectlink" : [
+        {
+          "Link" : "https://erasehateapp.com/",
+          "Linktxt" : "Erase Hate"
+        }
+      ],
+      "modalimage" : "images/erasehate.jpg",
+      "modalID" : "EH",
+      "modal_label" : "erase_hate"
+    },
+    {
       "title" : "NASDASH",
       "dates" : "Ongoing",
-      "description":"An interactive NASDAQ web dashboard & API service, providing a NASDAQ market and news overview and pipeline for consumable data. Built with Flask,Python,SQL,JS,and HTML",
+      "description":"An interactive NASDAQ web dashboard & API service, providing a NASDAQ market and news overview with a pipeline for consumable data. Built on Flask,Python,SQL,JS,and HTML",
       "modaldescript" : "  An interactive web dashbard built to provide NASDAQ price action and market news visualization. Users may select from any stock listed in the NASDAQ and see its recent or historical price action as far back as 10yrs. \
        Relevent news items pretaining to the selected NASDAQ ticker, market overview tables, and an economic events calendar are provided for exploration of market trends. News items are plotted on the timeseries plot of recent price action, \
        allowing users to determine if any recent news items may have affected recent price action. A user may then explore a table of the plotted news articles for further information. Additionally, all information used to build \
-       the various tables and plots are available through API endpoints that provide clean data in JSON format. The  original data has been sourced from a combination of external API requests and html table scraping from various industry sources.",
+       the various tables and plots are available through API endpoints that provide clean data in JSON format. The original data has been sourced from a combination of external API requests and html table scraping from various industry sources.",
       "images" : "images/nasdashweb.jpg",
       "projectlink" : [
         {
           "Link" : "https://nasdash.herokuapp.com/",
-          "Linktxt" : "NASDASH - Deployed App"
+          "Linktxt" : "NASDASH"
         },
         {
           "Link" : "https://github.com/oblockton/NASDASH",
           "Linktxt" : "NASDASH - Repository"
-        },
+        }
       ],
       "modalimage" : "images/nasdashweb.jpg",
       "modalID" : "modal-0",
@@ -189,27 +207,28 @@ var projects = {
           "Linktxt" : "Analysis Presentation"
         }
       ],
-      "modalimage" : "images/growth.png",
+      "modalimage" : "images/growth_plot.jpg",
       "modalID" : "modal-1",
       "modal_label" : "Game_of_Thrones"
     },
     ////////////////////////////////////////////////////////////////////////////////////////////
     {
-      "title" : "Flask O' Plotly",
-      "dates" : "June 2019",
-      "description":"Using Flask, SqlAlchemy, Python, HTML, JS, and Plotly for ETL,analysis and web visualization of belly button biodiversity,with api service via Flask endpoints.",
-      "modaldescript" : "Building an interactive dashboard to explore the Belly Button Biodiversity DataSet. Plotly.js is used to build interactive charts for the dashboard.\
-       All plots should dynamically update based on user selection of test sample ID. Please view the repository ReadME for detailed information and product examples.",
-      "images" : "images/bacteria_by_filterforgedotcom.jpg",
+      "title" : "Citibike's Tableau Story",
+      "dates" : "July 2019",
+      "description":"Using the publicly available dataset from Citibike, Tableau was used to provide a breifing on rider activity during January 2019.",
+      "modaldescript": "In this briefing we explore CitiBike rider activity records for the month of January 2019, in an effort to uncover any trends or insights within the dataset. \
+      We will start at the least granular level, observing overall sums and averages for key metrics of rider count, trip duration, and station activity.\
+      Next we dive deeper, exploring various 'Top' charts and experimenting with class segmentation to extrapolate any trends existing withing certain groupings of records. ",
+      "images" : "images/citibiketableau.jpg",
       "projectlink" : [
         {
-          "Link" : "https://github.com/oblockton/Flask_of_Plotly",
-          "Linktxt" : "Flask O' Plotly - Repository"
+          "Link" : "https://public.tableau.com/profile/omari.blockton#!/vizhome/UCB_CitiBike/Story1?publish=yes",
+          "Linktxt" : "CitiBike Jan '19 Breif - Tableau Public Story"
         },
       ],
-      "modalimage" : "images/bacteria_by_filterforgedotcom.jpg",
-      "modalID" : "modal-2",
-      "modal_label" : "flask_plotly"
+      "modalimage" : "images/citibiketableau.jpg",
+      "modalID" : "modal-5",
+      "modal_label" : "tableau"
     },
     /////////////////////////////////////////////////////////////////
     {
@@ -254,27 +273,22 @@ var projects = {
     },
     /////////////////////////////////////////////////////////////////////////////////////
     {
-      "title" : "Citibike's Tableau Story",
-      "dates" : "July 2019",
-      "description":"Using the publicly available dataset from Citibike, Tableau was used to provide a breifing on rider activity during January 2019.",
-      "modaldescript": "In this briefing we explore CitiBike rider activity records for the month of January 2019, in an effort to uncover any trends or insights within the dataset. \
-      We will start at the least granular level, observing overall sums and averages for key metrics of rider count, trip duration, and station activity.\
-      Next we dive deeper, exploring various 'Top' charts and experimenting with class segmentation to extrapolate any trends existing withing certain groupings of records. ",
-      "images" : "images/citibiketableau.jpg",
+      "title" : "Flask O' Plotly",
+      "dates" : "June 2019",
+      "description":"Using Flask, SqlAlchemy, Python, HTML, JS, and Plotly for ETL,analysis and web visualization of belly button biodiversity,with api service via Flask endpoints.",
+      "modaldescript" : "Building an interactive dashboard to explore the Belly Button Biodiversity DataSet. Plotly.js is used to build interactive charts for the dashboard.\
+       All plots should dynamically update based on user selection of test sample ID. Please view the repository ReadME for detailed information and product examples.",
+      "images" : "images/bacteria_by_filterforgedotcom.jpg",
       "projectlink" : [
         {
-          "Link" : "https://public.tableau.com/profile/omari.blockton#!/vizhome/UCB_CitiBike/Story1?publish=yes",
-          "Linktxt" : "CitiBike Jan '19 Breif - Tableau Public Story"
+          "Link" : "https://github.com/oblockton/Flask_of_Plotly",
+          "Linktxt" : "Flask O' Plotly - Repository"
         },
       ],
-      "modalimage" : "images/citibiketableau.jpg",
-      "modalID" : "modal-5",
-      "modal_label" : "tableau"
-    },
-
-
-
-
+      "modalimage" : "images/bacteria_by_filterforgedotcom.jpg",
+      "modalID" : "modal-2",
+      "modal_label" : "flask_plotly"
+    }
     //////////////////////////////////////////////////////////////////////////////////////////
     // {
     //   "title" : "Mongod of Mars",
@@ -366,21 +380,7 @@ var projects = {
     // },
   ]
 }
-/*
-projects.display = function() {
-  for (project in projects.projectList){
-    $("#projectsRow").append(HTMLprojectStart)
-    var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projectList[project].title)
-    var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projectList[project].dates)
-    var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projectList[project].description)
-    var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projectList[project].images)
-    $(".project-entry:last").append(formattedProjectTitle)
-    $(".date-placeholder:last").append(formattedProjectDates, formattedProjectDescription, formattedProjectImage)
-  }
 
-};
-projects.display();
-*/
 // Build Projects section and add modals to the DOM respectively
 projects.display = function() {
   for (project in projects.projectList){
@@ -505,14 +505,14 @@ buildOnlineCourses();
 
 
 //function of the internationalizeButton
-function inName(name) {
-  name = name.trim().split(" ")
-  console.log(name);
-  name[1] = name[1].toUpperCase()
-  name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase()
-  return name[0] + " "+ name[1]
-}
-$('#main').append(internationalizeButton);
+// function inName(name) {
+//   name = name.trim().split(" ")
+//   console.log(name);
+//   name[1] = name[1].toUpperCase()
+//   name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase()
+//   return name[0] + " "+ name[1]
+// }
+// $('#main').append(internationalizeButton);
 
 // $("#mapDiv").append(googleMap);
 

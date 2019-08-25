@@ -65,13 +65,13 @@ var HTMLmodalEnd = '</div><div class="modal-footer"><button type="button" class=
 /*
 The Internationalize Names button uses this code to hook up code to the button that's appended in resumeBuilder.js
 */
-$(document).ready(function() {
-  $('button').click(function() {
-    var $name = $('#name');
-    var iName = inName($name.text()) || function(){};
-    $name.html(iName);
-  });
-});
+// $(document).ready(function() {
+//   $('button').click(function() {
+//     var $name = $('#name');
+//     var iName = inName($name.text()) || function(){};
+//     $name.html(iName);
+//   });
+// });
 
 // /*
 // The next few lines about clicks are for the Collecting Click Locations.*/
